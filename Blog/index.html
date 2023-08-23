@@ -68,12 +68,27 @@ color: black;
     border-radius: 10px;  
 }
 
+/* ...............Media queries(Medium Device)........................ */
+@media screen and (max-width: 1024px) {
+    .blog-container{  
+    grid-template-columns: repeat(2,1fr);
+}
+}
+/* ....................Media queries (Small Devices)............... */
+
+@media screen and (max-width: 600px) {
+    .blog-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+  
+  
+}
  </style>
 </head>
 <body>
     <div class="container">
         <h2 class="blog-title" >Krishu's Blog</h3>
-            <h3 class="blog-title" ><a  href="/Blog/about.html">About Page</a></h3>
+            <h3 class="blog-title" ><a  href="about.html">About Page</a></h3>
        <div class="blog-container">
         <div class="intro-container">
             <h3>Good practices for high-performance Node.js</h3>
