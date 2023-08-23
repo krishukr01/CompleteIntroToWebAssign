@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+    }
+   .blog-title {
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+   }  
+.intro-container{
+    width: 50%;
+    margin: auto;
+    height: fit-content;
+    margin-top: 1.5rem;
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 20px;
+}
+.intro-container p{
+    color: gray;
+    
+}
+.first-word{
+    font-size: 66px;
+    letter-spacing: -0.003em;
+    color: #242424;
+}
+.blog-container{  
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: min-content;
+}
+.author{
+margin-top: 8px;
+color: black;
+}
+.blog-img{
+    height: 150px;
+    width: 250px;
+}
+
+ </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="blog-title" >Blog Website</h3>
+            <h3 class="blog-title" ><a target="_blank" href="https://google.com">About Page</a></h3>
+       <div class="blog-container">
+        <div class="intro-container">
+            <h3>Good practices for high-performance Node.js</h3>
+            <img class="blog-img" src="https://blog.appsignal.com/_next/image?url=%2Fimages%2Fblog%2F2022-11%2Fnode19.png&w=3840&q=50" />
+            <p> <span class="first-word">In</span> this series of 3 articles we will cover some good practices about developing a Node.js web back-end application.
+                The series will not be a tutorial about Node, all the things you will read are intended for developers already familiar with the basics of Node.js and are looking for some hints about improving their architectures.    
+                The main focus will be about efficiency and performance, in order to obtain the best result with less resources.    
+                </p>
+                <span  class="posted-date">Posted on : 12/12/2023</span><br/>
+                <span class="author" >Author : Krishan Kumar Safi</span>
+        </div>
+        <div class="intro-container">
+            <h3>React best practices and patterns</h3>
+            <img class="blog-img" src="https://d2ms8rpfqc4h24.cloudfront.net/React_18_New_features_a9ebb05f34.jpg" />
+            <p> <span class="first-word">I</span> have been working with React.js for the past 4 to 5 years and have been using it for a number of different projects. While working on different projects I’ve found some common patterns I would like to share in this blog post. Without further ado, Let’s get started.
+                I’m not a fan of using redux, but I’ve been using it for a number of different projects. I’ve found that redux-thunk is used in almost all the projects I’ve worked on. I found that is more of a boilerplate code.
+                I’m not a fan of using redux, but I’ve b
+                </p>
+                <span class="posted-date">Posted on : 12/12/2023</span><br/>
+                <span class="author" >Author : Krishan Kumar Safi</span>
+        </div>
+        <div class="intro-container">
+            <h3>What is Nginx?</h3>
+            <img class="blog-img" src="https://beaglesecurity.com/blog/images/Nginx_840.png" />
+            <p> <span class="first-word">N</span>GINX  which is pronounced as ‘engine ex,’ is a widely used open-source web server software. It was a project started by Igor Sysops in 2002. It got officially released in October 2004. It was created to solve the problem of C10k, which is defined as a challenge to manage the ten thousand connections all at the same time.
+                Today is no limit on the number of connections that are being made within 
+                </p>
+                <span  class="posted-date">Posted on : 12/12/2023</span><br/>
+                <span class="author" >Author : Krishan Kumar Safi</span>
+        </div>
+        <div class="intro-container">
+            <h3>Good practices for high-performance Node.js</h3>
+            <img class="blog-img" src="https://blog.appsignal.com/_next/image?url=%2Fimages%2Fblog%2F2022-11%2Fnode19.png&w=3840&q=50" />
+            <p> <span class="first-word">In</span> this series of 3 articles we will cover some good practices about developing a Node.js web back-end application.
+                The series will not be a tutorial about Node, all the things you will read are intended for developers already familiar with the basics of Node.js and are looking for some hints about improving their architectures.    
+                </p>
+                <span  class="posted-date">Posted on : 12/12/2023</span><br/>
+                <span class="author" >Author : Krishan Kumar Safi</span>
+        </div>
+       </div>
+    </div>
+</body>
+</html>
