@@ -32,8 +32,9 @@
 
 .item-user-details {
   margin-top: 2rem;
-  height: 23rem;
+  height: 22rem;
   display: flex;
+
   justify-content: center;
   gap: 26px;
 }
