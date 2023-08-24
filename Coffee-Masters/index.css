@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-div{
+    height: 110vh;
+    width: 100%;
+
+}
+.nav{
+    background-color: #43281c;
+    color: #fbf2c0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    height: 72px;
+    gap: 5px;
+}
+.brand{
+    font-size: 1.5em;
+}
+.logo{
+    height: 25px;
+    position: relative;
+}
