@@ -25,6 +25,7 @@
 .brand {
   font-size: 1.5em;
 }
+
 .logo {
   height: 25px;
   position: relative;
@@ -46,10 +47,26 @@
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
   background-color: #eee1d5;
 }
-.user-container > div {
-  border: 1px solid red;
+.user-container {
+  background-color: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: unset;
+}
+.user-name {
+  height: 40%;
+  background-color: #eee1d5;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+  border-radius: 5px;
 }
 
+.user-payment {
+  height: 50%;
+  background-color: #eee1d5;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+}
 .payment-details {
   display: flex;
   height: 18rem;
@@ -62,16 +79,19 @@
 .placer-order-btn {
   margin: 0px auto;
 }
+
 .details {
   height: 130px;
   width: 35%;
 }
+
 .details div {
   height: 33%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .details :nth-child(3) {
   font-weight: bold;
   color: black;
@@ -101,22 +121,27 @@
   justify-content: space-between;
   border-bottom: 2px solid #ddb892;
 }
+
 .single-item-no-border {
   border: none;
 }
+
 .product-details {
   display: flex;
   width: 250px;
   gap: 2rem;
 }
+
 .main-item {
   font-weight: bold;
 }
+
 .secondary-item {
   color: #b08967;
   font-size: 14px;
   padding: 5px 0px 0px 0px;
 }
+
 .price-details {
   height: 100%;
   width: max-content;
@@ -125,10 +150,36 @@
   font-weight: bold;
 }
 
+.example-group {
+  position: relative;
+  display: inline-block;
+  margin: 15px 10px 10px 20px;
+  width: 100%;
+}
+.example-input {
+  border: 2px solid #885a2d;
+  padding: 8px;
+  border-radius: 10px;
+  width: 80%;
+  background-color: #eee1d5;
+  height: 40px;
+}
+
+.input-label {
+  background-color: #eee1d5;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+  color: #885a2d;
+}
+
 @media screen and (max-width: 600px) {
   .item-user-details {
     flex-direction: column;
   }
+
   .item-container,
   .user-container {
     width: 100%;
