@@ -34,7 +34,6 @@
   margin-top: 2rem;
   height: 22rem;
   display: flex;
-
   justify-content: center;
   gap: 26px;
 }
@@ -46,6 +45,9 @@
   border-radius: 5px;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
   background-color: #eee1d5;
+}
+.user-container > div {
+  border: 1px solid red;
 }
 
 .payment-details {
@@ -121,4 +123,14 @@
   display: flex;
   justify-content: center;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .item-user-details {
+    flex-direction: column;
+  }
+  .item-container,
+  .user-container {
+    width: 100%;
+  }
 }
