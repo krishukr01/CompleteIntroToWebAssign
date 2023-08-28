@@ -1,0 +1,19 @@
+1.What is your favorite programming language? Why?
+
+Answer : I have been using JavaScript since 18 months so I'm more familiar with JavaScript and also
+ JavaScript is my favorite currently , as JavaScript used widely in Web development and even we can work
+with backend using JavaScript and there are lots of libraries which is written in JavaScript, These all are
+the reason to use JavaScript
+
+
+
+2.Do you know CSS? How would you rate yourself in CSS?
+
+Answer: Yes , I know CSS and also work with more than 10 projects and if I need to rate myself in CSS 
+I will give 7 out of 10 .
+
+
+3.Do you know React? How would you rate yourself in React?
+
+Answer: Yes , I know React and also created several web app using React and I have been using react 
+since last 11 months and If i need to rate myself in React I will give 7.5 out of 10.
