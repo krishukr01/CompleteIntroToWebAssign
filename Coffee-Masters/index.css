@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
-
 .main-div {
   width: 100%;
   background-color: #efefef;
@@ -20,6 +19,7 @@
   font-weight: normal;
   height: 72px;
   gap: 6px;
+  margin-bottom: 10px;
 }
 
 .brand {
@@ -154,7 +154,7 @@
   position: relative;
   display: inline-block;
   margin: 15px 10px 10px 20px;
-  width: 100%;
+  width: 80%;
 }
 .example-input {
   border: 2px solid #885a2d;
@@ -163,6 +163,7 @@
   width: 80%;
   background-color: #eee1d5;
   height: 40px;
+  outline: none;
 }
 
 .input-label {
@@ -175,13 +176,22 @@
   color: #885a2d;
 }
 
+/* ...............Media queries(Medium Device)........................ */
+@media screen and (max-width: 1024px) {
+}
+/* ....................Media queries (Small Devices)............... */
+
 @media screen and (max-width: 600px) {
   .item-user-details {
+    height: max-content;
     flex-direction: column;
   }
-
   .item-container,
   .user-container {
+    height: 100%;
+    width: 100%;
+  }
+  .example-input {
     width: 100%;
   }
 }
