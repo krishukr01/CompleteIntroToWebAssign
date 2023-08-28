@@ -5,20 +5,8 @@ let arr1 = [1, 3, 5];
 let arr2 = [2, 4];
 
 const mergeSorted = (arr1, arr2) => {
-  let start = 0;
-  let end = arr1.length - 1;
-  let answer = [];
-
-  while (start < end) {
-    if (arr1[start] < arr2[end]) {
-      answer.push(arr1[start]);
-      start++;
-    } else {
-      answer.push(arr2[end]);
-      end--;
-    }
-  }
-  console.log(answer);
+  let result = [...arr1, ...arr2].sort((a, b) => b - a);
+  return result;
 };
 
-mergeSorted(arr1, arr2);
+console.log(mergeSorted(arr1, arr2));
