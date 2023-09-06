@@ -12,8 +12,14 @@ const handleNumber = (value) => {
 
 // Event Handler : For handle symbol click
 const handleSymbol = (value) => {
-  console.log(screenValue);
-  console.log("Symbol is clicked");
+  switch (value) {
+    case "C": {
+      screenValue = "0";
+      break;
+    }
+  }
+
+  reRender();
 };
 
 // Event handlers : For Handle Click

@@ -12,6 +12,10 @@ body {
   background-color: black;
   color: white;
   margin: auto;
+  margin-top: 2rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 5px;
 }
 
 .screen {
@@ -25,7 +29,7 @@ body {
 .calc-button {
   background-color: #d8d9db;
   color: black;
-  height: 100px;
+  height: 85px;
   width: 24.5%;
   border: none;
   border-radius: 0;
