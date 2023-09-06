@@ -1,5 +1,44 @@
 let screenValue = "0";
+let currentTotal = 0;
+let previousOperator;
+
 let screen = document.querySelector(".screen");
+
+// Handle Back-Arrow
+const handleBackArrow = () => {
+  if (screenValue.length === 1) {
+    screenValue = "0";
+  } else {
+    screenValue = screenValue.substring(0, screenValue.length - 1);
+  }
+};
+
+const handleMathOperation = (intScreenValue) => {
+  if (previousOperator === "+") {
+    currentTotal += intScreenValue;
+  } else if (previousOperator === "-") {
+    currentTotal -= intScreenValue;
+  } else if (previousOperator === "×") {
+    currentTotal *= intScreenValue;
+  } else if (previousOperator === "÷") {
+    currentTotal /= intScreenValue;
+  }
+};
+
+const handleMath = (value) => {
+  if (screenValue === "0") {
+    return;
+  }
+  let intScreenValue = parseInt(screenValue);
+  if (currentTotal === 0) {
+    currentTotal = intScreenValue;
+  } else {
+    handleMathOperation(intScreenValue);
+  }
+  previousOperator = value;
+  screenValue = "0";
+};
+
 // Event handlers : for handle number click
 const handleNumber = (value) => {
   if (screenValue === "0") {
@@ -7,19 +46,46 @@ const handleNumber = (value) => {
   } else {
     screenValue += value;
   }
-  reRender();
 };
 
 // Event Handler : For handle symbol click
-const handleSymbol = (value) => {
-  switch (value) {
+const handleSymbol = (symbol) => {
+  switch (symbol) {
     case "C": {
       screenValue = "0";
       break;
     }
+    case "=": {
+      if (previousOperator === null) {
+        return;
+      }
+      handleMathOperation(parseInt(screenValue));
+      previousOperator = null;
+      screenValue = "" + currentTotal;
+      currentTotal = 0;
+      break;
+    }
+    case "←": {
+      handleBackArrow();
+      break;
+    }
+    case "÷": {
+      handleMath(symbol);
+      break;
+    }
+    case "×": {
+      handleMath(symbol);
+      break;
+    }
+    case "-": {
+      handleMath(symbol);
+      break;
+    }
+    case "+": {
+      handleMath(symbol);
+      break;
+    }
   }
-
-  reRender();
 };
 
 // Event handlers : For Handle Click
@@ -29,6 +95,8 @@ const handleClick = (value) => {
   } else {
     handleNumber(value);
   }
+
+  reRender();
 };
 
 // Re-render after change happens
